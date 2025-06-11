@@ -1,4 +1,4 @@
-# Dynamic-Lookback---Momentum-Trading-Strategy-BTC
+# Dynamic-Lookback-Momentum-Trading-Strategy-BTC
 I coded and backtested the dynamic lookback formula (STRATEGY.py) to measure momentum on BTC, from this article (The article applied this on SPY) : https://seekingalpha.com/article/4043600-testing-a-dynamic-lookback-period-in-a-simple-momentum-trading-model , I chose as arbitrary lookback 720 hours or 30 days (On the article is 100-day arbitrary lookback to start and apply the dynamic lookback formula) , I used hourly data.
 This is the part of the article that describes this formula:
 a dynamic lookback is used which is based on the 100-day volatility of SPY, which we'll call σ (σ is the standard deviation of the last 100 days of daily returns; 100 days was chosen arbitrarily). A volatility factor "VF" is then calculated by dividing the current σ by the 100-day simple average of σ. The lookback period is then VF times 252. If the current σ is 75% of the 100-day SMA of σ, then the lookback would be 75% * 252, or 189 days.
